@@ -1,22 +1,20 @@
 USE [FakturniakDB]
 GO
-/****** Object:  StoredProcedure [dbo].[spSposobyPlatnosci_Add]    Script Date: 14.07.2022 17:47:44 ******/
+/****** Object:  StoredProcedure [dbo].[spSposobyPlatnosci_GetAll]    Script Date: 14.07.2022 17:47:44 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 -- =============================================
 -- Author:		Jacek Gałuszka
--- Create date: 06.07.2022
+-- Create date: 14.07.2022
 -- Description:	Procedura dodawania sposobu płatności
 -- =============================================
 
-CREATE PROCEDURE [dbo].[spSposobyPlatnosci_Add]
-@nazwa varchar(50)
-
+CREATE PROCEDURE [dbo].[spSposobyPlatnosci_GetAll]
 AS
 BEGIN
 	SET NOCOUNT ON;
-	INSERT INTO dbo.sposoby_platnosci(nazwa) VALUES (@nazwa);
+	SELECT * FROM dbo.sposoby_platnosci;
 END
 GO
