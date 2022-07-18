@@ -1,6 +1,6 @@
 USE [FakturniakDB]
 GO
-/****** Object:  View [dbo].[vFaktury]    Script Date: 15.07.2022 14:56:09 ******/
+/****** Object:  View [dbo].[vFaktury]    Script Date: 18.07.2022 14:44:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON

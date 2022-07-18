@@ -1,6 +1,6 @@
 USE [FakturniakDB]
 GO
-/****** Object:  StoredProcedure [dbo].[spKontrahenci_Add]    Script Date: 15.07.2022 14:56:09 ******/
+/****** Object:  StoredProcedure [dbo].[spKontrahenci_Add]    Script Date: 18.07.2022 14:44:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -23,14 +23,13 @@ CREATE PROCEDURE [dbo].[spKontrahenci_Add]
 	@adres nvarchar(50),
 	@kod_pocztowy nvarchar(6),
 	@miasto nvarchar(50),
-	@nr_konta nvarchar(23) = NULL,
-	@swift nvarchar(8) = NULL,
-	@termin_zaplaty date = NULL
+	@numer_konta nvarchar(32) = NULL,
+	@swift nvarchar(8) = NULL
 
 AS
 BEGIN
 	SET NOCOUNT ON;
-	INSERT INTO kontrahenci (imie, nazwisko, nazwa, nip, regon, krs, pesel, email, telefon, adres, kod_pocztowy, miasto, nr_konta, swift, termin_zaplaty)
-	VALUES (@imie, @nazwisko, @nazwa, @nip, @regon, @krs, @pesel, @email, @telefon, @adres, @kod_pocztowy, @miasto, @nr_konta, @swift, @termin_zaplaty)
+	INSERT INTO kontrahenci (imie, nazwisko, nazwa, nip, regon, krs, pesel, email, telefon, adres, kod_pocztowy, miasto, nr_konta, swift)
+	VALUES (@imie, @nazwisko, @nazwa, @nip, @regon, @krs, @pesel, @email, @telefon, @adres, @kod_pocztowy, @miasto, @numer_konta, @swift)
 END
 GO
