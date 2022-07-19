@@ -1,6 +1,6 @@
 USE [FakturniakDB]
 GO
-/****** Object:  StoredProcedure [dbo].[spJednostkiMiary_Add]    Script Date: 18.07.2022 14:44:00 ******/
+/****** Object:  StoredProcedure [dbo].[spJednostkiMiary_Add]    Script Date: 19.07.2022 15:30:05 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
