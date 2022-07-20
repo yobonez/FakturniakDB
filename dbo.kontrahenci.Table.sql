@@ -1,6 +1,6 @@
 USE [FakturniakDB]
 GO
-/****** Object:  Table [dbo].[kontrahenci]    Script Date: 19.07.2022 15:30:05 ******/
+/****** Object:  Table [dbo].[kontrahenci]    Script Date: 20.07.2022 18:09:40 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -19,7 +19,7 @@ CREATE TABLE [dbo].[kontrahenci](
 	[adres] [nvarchar](50) NOT NULL,
 	[kod_pocztowy] [nvarchar](6) NOT NULL,
 	[miasto] [nvarchar](50) NOT NULL,
-	[nr_konta] [nvarchar](32) NULL,
+	[numer_konta] [nvarchar](32) NULL,
 	[swift] [nvarchar](8) NULL,
  CONSTRAINT [PK__kontrahe__39208E0B5FA75696] PRIMARY KEY CLUSTERED 
 (
