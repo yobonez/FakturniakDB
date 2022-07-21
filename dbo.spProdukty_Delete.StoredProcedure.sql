@@ -1,6 +1,6 @@
 USE [FakturniakDB]
 GO
-/****** Object:  StoredProcedure [dbo].[spProdukty_Delete]    Script Date: 20.07.2022 18:09:40 ******/
+/****** Object:  StoredProcedure [dbo].[spProdukty_Delete]    Script Date: 21.07.2022 14:46:06 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
