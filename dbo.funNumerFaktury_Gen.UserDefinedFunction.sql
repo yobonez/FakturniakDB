@@ -1,6 +1,6 @@
 USE [FakturniakDB]
 GO
-/****** Object:  UserDefinedFunction [dbo].[funNumerFaktury_Gen]    Script Date: 25.07.2022 15:29:27 ******/
+/****** Object:  UserDefinedFunction [dbo].[funNumerFaktury_Gen]    Script Date: 26.07.2022 14:58:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -27,7 +27,7 @@ BEGIN
 	DECLARE @numer_faktury_prefix varchar(5) = @prefix_typ_faktury + ' 00';
 	
 	IF @numer IS NULL
-		SELECT @count_faktury = COUNT(numer_faktury) + 1 FROM dbo.faktury;
+		SELECT @count_faktury = COUNT(numer_faktury) + 1 FROM dbo.faktury WHERE numer_faktury LIKE '%' + substring(convert(varchar, GETDATE(), 105),4,10) + '%'
 	ELSE
 		SET @count_faktury = @numer;
 	

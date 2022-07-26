@@ -1,6 +1,6 @@
 USE [FakturniakDB]
 GO
-/****** Object:  StoredProcedure [dbo].[spFaktury_Add]    Script Date: 25.07.2022 15:29:27 ******/
+/****** Object:  StoredProcedure [dbo].[spFaktury_Add]    Script Date: 26.07.2022 14:58:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -45,7 +45,8 @@ BEGIN
 									termin_platnosci,
 									id_typu_faktury,
 									uwagi,
-									uwagi_wewnetrzne)
+									uwagi_wewnetrzne,
+									wystawiajacy)
 
 		VALUES					(@numer_faktury,
 									@data_wystawienia,
@@ -57,7 +58,8 @@ BEGIN
 									@termin_platnosci,
 									@id_typu_faktury,
 									@uwagi,
-									@uwagi_wewnetrzne)
+									@uwagi_wewnetrzne,
+									ORIGINAL_LOGIN())
 	END
 END
 GO

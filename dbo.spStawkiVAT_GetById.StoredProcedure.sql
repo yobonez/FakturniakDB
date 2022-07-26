@@ -1,6 +1,6 @@
 USE [FakturniakDB]
 GO
-/****** Object:  StoredProcedure [dbo].[spStawkiVAT_GetById]    Script Date: 25.07.2022 15:29:27 ******/
+/****** Object:  StoredProcedure [dbo].[spStawkiVAT_GetById]    Script Date: 26.07.2022 14:58:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON

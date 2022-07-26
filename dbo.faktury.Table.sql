@@ -1,6 +1,6 @@
 USE [FakturniakDB]
 GO
-/****** Object:  Table [dbo].[faktury]    Script Date: 25.07.2022 15:29:27 ******/
+/****** Object:  Table [dbo].[faktury]    Script Date: 26.07.2022 14:58:58 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -17,6 +17,7 @@ CREATE TABLE [dbo].[faktury](
 	[id_typu_faktury] [int] NOT NULL,
 	[uwagi] [nvarchar](300) NULL,
 	[uwagi_wewnetrzne] [nvarchar](300) NULL,
+	[wystawiajacy] [nvarchar](50) NULL,
  CONSTRAINT [PK_FAKTURY] PRIMARY KEY CLUSTERED 
 (
 	[numer_faktury] ASC
