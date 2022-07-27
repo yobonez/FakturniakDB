@@ -1,6 +1,6 @@
 USE [FakturniakDB]
 GO
-/****** Object:  UserDefinedFunction [dbo].[funNumerFaktury_Gen]    Script Date: 26.07.2022 14:58:58 ******/
+/****** Object:  UserDefinedFunction [dbo].[funNumerFaktury_Gen]    Script Date: 27.07.2022 15:11:34 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
