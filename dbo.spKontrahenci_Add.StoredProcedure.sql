@@ -1,6 +1,6 @@
 USE [FakturniakDB]
 GO
-/****** Object:  StoredProcedure [dbo].[spKontrahenci_Add]    Script Date: 27.07.2022 15:11:34 ******/
+/****** Object:  StoredProcedure [dbo].[spKontrahenci_Add]    Script Date: 28.07.2022 18:04:48 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
