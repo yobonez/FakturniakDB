@@ -1,6 +1,6 @@
 USE [FakturniakDB]
 GO
-/****** Object:  Table [dbo].[mtm_faktura_produkty]    Script Date: 28.07.2022 18:04:48 ******/
+/****** Object:  Table [dbo].[mtm_faktura_produkty]    Script Date: 29.07.2022 14:51:15 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON

@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [FakturniakDB]    Script Date: 28.07.2022 18:04:48 ******/
+/****** Object:  Database [FakturniakDB]    Script Date: 29.07.2022 14:51:15 ******/
 CREATE DATABASE [FakturniakDB]
  CONTAINMENT = NONE
  ON  PRIMARY 

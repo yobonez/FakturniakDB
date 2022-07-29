@@ -1,6 +1,6 @@
 USE [FakturniakDB]
 GO
-/****** Object:  User [Administrator]    Script Date: 28.07.2022 18:04:48 ******/
+/****** Object:  User [Administrator]    Script Date: 29.07.2022 14:51:15 ******/
 CREATE USER [Administrator] FOR LOGIN [Administrator] WITH DEFAULT_SCHEMA=[dbo]
 GO
 ALTER ROLE [db_owner] ADD MEMBER [Administrator]
